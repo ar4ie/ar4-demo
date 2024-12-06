@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Terrains
+  m_EditorClassIdentifier: 
+  m_GroupName: Terrains
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 2e7ad229c30e5784a8f840dabffcf0ff
+  m_SerializeEntries:
+  - m_GUID: 4092c3583dcd2464aaf0d272ad9a3504
+    m_Address: Terrains/Random
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 9dbf07110b89cdd4e879857cfef24132, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d3385307501afa542a32ef3be0a53f04, type: 2}
+    - {fileID: 11400000, guid: 27cb3b265ccdc1146b9b96dbd3e10735, type: 2}
