@@ -3,6 +3,7 @@
 This is game demo project.<br>
 Genre: multiplayer isometric slasher.<br>
 Tech stack: Unity, Photon Fusion 2.<br>
+Gameplay video: https://www.youtube.com/watch?v=ohvx_LIILzY
 
 ## FAQ
 
