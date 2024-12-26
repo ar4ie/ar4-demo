@@ -80,7 +80,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5615354763738096520, guid: 318afdf0811e8524ab00ec511768887a,
         type: 3}
-      propertyPath: modelPrefab.m_AssetGUID
+      propertyPath: asyncModel.prefab.m_AssetGUID
       value: 4ed07ba580503d84fb22ef5e909ddf41
       objectReference: {fileID: 0}
     m_RemovedComponents: []

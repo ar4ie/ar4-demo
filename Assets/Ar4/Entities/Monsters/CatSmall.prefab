@@ -83,6 +83,11 @@ PrefabInstance:
       propertyPath: modelPrefab.m_AssetGUID
       value: 6a19126e584ccce428be682071c9c9cc
       objectReference: {fileID: 0}
+    - target: {fileID: 5615354763738096520, guid: 318afdf0811e8524ab00ec511768887a,
+        type: 3}
+      propertyPath: asyncModel.prefab.m_AssetGUID
+      value: 6a19126e584ccce428be682071c9c9cc
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

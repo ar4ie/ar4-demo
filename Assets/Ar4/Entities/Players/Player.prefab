@@ -45,7 +45,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4219686847321522123, guid: f84c83575c95c5944aaf2c1f4446f519,
         type: 3}
-      propertyPath: modelPrefab.m_AssetGUID
+      propertyPath: asyncModel.prefab.m_AssetGUID
       value: 7dd448af6f4e5074bac926982c8ff383
       objectReference: {fileID: 0}
     - target: {fileID: 4943416388970539207, guid: f84c83575c95c5944aaf2c1f4446f519,

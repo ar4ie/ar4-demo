@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 913288675116126940}
     - target: {fileID: 4908104053540396913, guid: 502f5ef39c9045145934cb4a117fb807,
         type: 3}
-      propertyPath: terrainPrefab.m_AssetGUID
+      propertyPath: asyncTerrain.prefab.m_AssetGUID
       value: 4092c3583dcd2464aaf0d272ad9a3504
       objectReference: {fileID: 0}
     - target: {fileID: 5658430062643448788, guid: 502f5ef39c9045145934cb4a117fb807,

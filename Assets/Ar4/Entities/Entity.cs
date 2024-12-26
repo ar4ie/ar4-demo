@@ -7,7 +7,6 @@ using Ar4.Entities.Players;
 using Ar4.Zones;
 using Fusion;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 using Zenject;
 
 namespace Ar4.Entities
@@ -31,10 +30,9 @@ namespace Ar4.Entities
         public bool IsPlayer => Object.InputAuthority != default;
         public bool IsEnemy(Entity e) => e.IsPlayer != IsPlayer;
 
-        [SerializeField] AssetReference modelPrefab;
-        EntityModel _model;
-        public EntityModel Model => _model;
-        public bool RenderInitialized => _model != null;
+        [SerializeField] AsyncComponent<EntityModel> asyncModel;
+        public EntityModel Model => asyncModel.Component;
+        public bool RenderInitialized => Model != null;
         ChangeDetector _renderChangeDetector;
 
         public override async void Spawned()
@@ -49,7 +47,7 @@ namespace Ar4.Entities
         public override void Despawned(NetworkRunner runner, bool hasState)
         {
             if (RenderInitialized)
-                _model.OnDespawn();
+                Model.OnDespawn();
             DestroyModel();
             _zone.OnEntityDespawned(this);
             base.Despawned(runner, hasState);
@@ -59,16 +57,12 @@ namespace Ar4.Entities
         {
             if (!Runner.IsPlayer)
                 return;
-            _model = (await modelPrefab.InstantiateAsync(parent: transform).Task).GetComponent<EntityModel>();
+            await asyncModel.Load(transform);
         }
 
         public void DestroyModel()
         {
-            if (_model != default)
-            {
-                Destroy(_model);
-                _model = default;
-            }
+            asyncModel.Unload();
         }
 
         public override void FixedUpdateNetwork()
